@@ -397,6 +397,14 @@
         {
             "name": "chatGoogleGenerativeAI",
             "models": [
+               {
+                    "label": "gemini-2.0-flash-exp",
+                    "name": "gemini-2.0-flash-exp"
+                },
+                {
+                    "label": "gemini-2.0-flash-thinking-exp-01-21",
+                    "name": "gemini-2.0-flash-thinking-exp-01-21"
+                },
                 {
                     "label": "gemini-1.5-flash-latest",
                     "name": "gemini-1.5-flash-latest"
