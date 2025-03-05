@@ -122,8 +122,10 @@ export const generateFollowUpPrompts = async (
                 return structuredResponse
             }
             case FollowUpPromptProvider.OLLAMA: {
+                const ollama = new Ollama({ host: 'http://127.0.0.1:11434' })
                 const response = await ollama.chat({
                     model: providerConfig.modelName,
+                    baseUrl: providerConfig.baseUrl,
                     messages: [
                         {
                             role: 'user',
