@@ -277,6 +277,13 @@ const followUpPromptsOptions = {
                 description: 'Name of the Ollama model to use',
                 default: 'llama3.2-vision:latest'
             },
+                        {
+                label: 'Base Url',
+                name: 'baseUrl',
+                type: 'string',
+                description: 'Optional, required for non-default base Url',            
+                default: 'http://127.0.0.1:11434'
+            },
             {
                 label: 'Prompt',
                 name: 'prompt',
